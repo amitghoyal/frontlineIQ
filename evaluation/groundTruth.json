@@ -1,0 +1,52 @@
+[
+  {
+    "message_id": "m01",
+    "expected_category": "payment",
+    "expected_needs_human": true
+  },
+  {
+    "message_id": "m02",
+    "expected_category": "account",
+    "expected_needs_human": false
+  },
+  {
+    "message_id": "m03",
+    "expected_category": "order",
+    "expected_needs_human": true
+  },
+  {
+    "message_id": "m04",
+    "expected_category": "account",
+    "expected_needs_human": false
+  },
+  {
+    "message_id": "m05",
+    "expected_category": "technical",
+    "expected_needs_human": true
+  },
+  {
+    "message_id": "m06",
+    "expected_category": "order",
+    "expected_needs_human": true
+  },
+  {
+    "message_id": "m07",
+    "expected_category": "unclear",
+    "expected_needs_human": true
+  },
+  {
+    "message_id": "m08",
+    "expected_category": "refund",
+    "expected_needs_human": true
+  },
+  {
+    "message_id": "m09",
+    "expected_category": "refund",
+    "expected_needs_human": true
+  },
+  {
+    "message_id": "m10",
+    "expected_category": "account",
+    "expected_needs_human": true
+  }
+]

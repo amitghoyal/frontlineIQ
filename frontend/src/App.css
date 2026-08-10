@@ -1,0 +1,784 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #f5f7fb;
+
+    color: #172033;
+}
+
+
+button,
+textarea {
+    font-family: inherit;
+}
+
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+
+    height: 76px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e7eaf0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.brand-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+}
+
+
+.brand h1 {
+
+    font-size: 20px;
+
+    line-height: 1;
+
+}
+
+
+.brand span {
+
+    display: block;
+
+    font-size: 11px;
+
+    color: #7b8496;
+
+    margin-top: 4px;
+
+}
+
+
+.status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+
+    color: #526070;
+
+}
+
+
+.status-dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+}
+
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.main {
+
+    width: min(1100px, 90%);
+
+    margin: 0 auto;
+
+    flex: 1;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+
+    padding: 65px 0 35px;
+
+    max-width: 780px;
+
+}
+
+
+.eyebrow {
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: #64748b;
+
+    margin-bottom: 12px;
+}
+
+
+.hero h2 {
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    font-weight: 800;
+
+}
+
+
+.hero h2 span {
+
+    color: #5965f2;
+
+}
+
+
+.hero-text {
+
+    margin-top: 20px;
+
+    max-width: 650px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #697386;
+
+}
+
+
+/* ==========================================
+   INPUT CARD
+========================================== */
+
+.workspace {
+
+    padding-bottom: 60px;
+
+}
+
+
+.input-card {
+
+    background: white;
+
+    border: 1px solid #e5e9f0;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(20, 30, 50, 0.06);
+
+    overflow: hidden;
+
+}
+
+
+.card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 24px 26px;
+
+    border-bottom: 1px solid #edf0f5;
+
+}
+
+
+.card-header h3 {
+
+    font-size: 18px;
+
+}
+
+
+.card-header p {
+
+    color: #7b8496;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+}
+
+
+.input-label {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #8a94a6;
+
+    background: #f3f5f8;
+
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+}
+
+
+textarea {
+
+    width: 100%;
+
+    min-height: 180px;
+
+    resize: vertical;
+
+    border: none;
+
+    outline: none;
+
+    padding: 25px;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #273244;
+
+}
+
+
+textarea::placeholder {
+
+    color: #a5adbb;
+
+}
+
+
+.input-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 15px 20px;
+
+    border-top: 1px solid #edf0f5;
+
+}
+
+
+.input-footer span {
+
+    font-size: 12px;
+
+    color: #98a1af;
+
+}
+
+
+button {
+
+    border: none;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+button:hover {
+
+    transform: translateY(-1px);
+
+    background: #242d3d;
+
+}
+
+
+button:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.error-box {
+
+    margin-top: 20px;
+
+    padding: 15px 18px;
+
+    border-radius: 10px;
+
+    background: #fff5f5;
+
+    border: 1px solid #ffd7d7;
+
+    color: #b42318;
+
+    font-size: 14px;
+
+}
+
+
+/* ==========================================
+   RESULTS
+========================================== */
+
+.results {
+
+    margin-top: 25px;
+
+    background: white;
+
+    border: 1px solid #e5e9f0;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 35px rgba(20, 30, 50, 0.06);
+
+}
+
+
+.result-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 26px;
+
+    border-bottom: 1px solid #edf0f5;
+
+}
+
+
+.result-title h3 {
+
+    font-size: 24px;
+
+}
+
+
+.human-badge {
+
+    padding: 9px 13px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.human-badge.danger {
+
+    background: #fff1f1;
+
+    color: #c62828;
+
+}
+
+
+.human-badge.safe {
+
+    background: #ecfdf3;
+
+    color: #16804b;
+
+}
+
+
+/* ==========================================
+   METRICS
+========================================== */
+
+.metrics {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-bottom: 1px solid #edf0f5;
+
+}
+
+
+.metric {
+
+    padding: 25px;
+
+    border-right: 1px solid #edf0f5;
+
+}
+
+
+.metric:last-child {
+
+    border-right: none;
+
+}
+
+
+.metric span {
+
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #8b95a5;
+
+    margin-bottom: 9px;
+
+}
+
+
+.metric strong {
+
+    font-size: 23px;
+
+    text-transform: capitalize;
+
+}
+
+
+.metric small {
+
+    font-size: 12px;
+
+    color: #8b95a5;
+
+    margin-left: 3px;
+
+}
+
+
+.metric strong.critical {
+
+    color: #c62828;
+
+}
+
+
+.metric strong.high {
+
+    color: #e06b1f;
+
+}
+
+
+.metric strong.medium {
+
+    color: #b27b00;
+
+}
+
+
+.metric strong.low {
+
+    color: #27804f;
+
+}
+
+
+/* ==========================================
+   ANALYSIS
+========================================== */
+
+.analysis-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 1px;
+
+    background: #edf0f5;
+
+}
+
+
+.analysis-card {
+
+    background: white;
+
+    padding: 25px;
+
+}
+
+
+.analysis-label {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #8b95a5;
+
+}
+
+
+.analysis-card p {
+
+    margin-top: 12px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    color: #4e596b;
+
+}
+
+
+/* ==========================================
+   USAGE
+========================================== */
+
+.usage {
+
+    display: flex;
+
+    gap: 25px;
+
+    padding: 15px 25px;
+
+    background: #fafbfc;
+
+    border-top: 1px solid #edf0f5;
+
+    font-size: 11px;
+
+    color: #8b95a5;
+
+}
+
+
+.usage span:first-child {
+
+    font-weight: 800;
+
+    color: #657184;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    width: min(1100px, 90%);
+
+    margin: auto;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #e5e9f0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    color: #9aa3b2;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .header {
+
+        padding: 0 5%;
+
+    }
+
+
+    .status {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        padding-top: 40px;
+
+    }
+
+
+    .hero h2 {
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .metrics {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .metric:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .analysis-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .result-title {
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+
+    }
+
+
+    .usage {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+}

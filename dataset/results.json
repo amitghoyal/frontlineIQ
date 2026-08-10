@@ -1,0 +1,15 @@
+[
+  {
+    "message_id": "m01",
+    "text": "I was charged twice for the same order.",
+    "test_group": "clear",
+    "result": {
+      "category": "payment",
+      "priority": 8,
+      "summary": "Customer reports being charged twice for the same order.",
+      "suggested_action": "Investigate the duplicate charge and process a refund for one of the transactions if confirmed.",
+      "needs_human": true,
+      "confidence": 0.95
+    }
+  }
+]
