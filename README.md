@@ -591,7 +591,6 @@ The dashboard displays:
 * Category accuracy
 * Average latency
 * Reliability guardrails
-
 ---
 
 # Live Triage
